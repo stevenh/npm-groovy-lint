@@ -2,6 +2,11 @@
 
 ## Beta
 
+## [16.1.0] 2025-12-31
+
+- Implement exclusion of specific rules in the fix process
+- Upgrade dependencies
+
 ## [16.0.1] 2025-12-07
 
 - fix disabling rules from CLI arguments
