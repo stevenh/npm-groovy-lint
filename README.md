@@ -154,7 +154,7 @@ Any **question**, **problem** or **enhancement request** ? Ask [**here**](https:
 
 - If you have issues with v9, install previous version with `npm install -g npm-groovy-lint@8.2.0`
 - Node.js >= 12 is required to run this package. If you can't upgrade, you can use [nvm](https://github.com/nvm-sh/nvm) to have [different node versions on your computer](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/)
-- If you do not have java 17 installed on your computer, npm-groovy-lint will install them for you, so the first run may be long.
+- Java 17 or higher is required. If you do not have a compatible Java version installed on your computer, npm-groovy-lint will install Java 17 for you, so the first run may be long.
 
 ## Configuration
 
@@ -412,9 +412,15 @@ Run with additional flags by simply appending them at after docker image name:
 docker run --rm -u "$(id -u):$(id -g)" -w=/tmp -v "$PWD":/tmp nvuillam/npm-groovy-lint --failon warning --verbose
 ```
 
+Use the GitHub Container Registry image by replacing the image name:
+
+```shell
+docker run --rm -u "$(id -u):$(id -g)" -w=/tmp -v "$PWD":/tmp ghcr.io/nvuillam/npm-groovy-lint --failon warning --verbose
+```
+
 ### Other
 
-You can run npm-groovy-lint using its [official docker image](https://hub.docker.com/r/nvuillam/npm-groovy-lint)
+You can run npm-groovy-lint using its [official Docker Hub image](https://hub.docker.com/r/nvuillam/npm-groovy-lint) or its [GHCR image](https://github.com/nvuillam/npm-groovy-lint/pkgs/container/npm-groovy-lint)
 
 ## Use as module
 
