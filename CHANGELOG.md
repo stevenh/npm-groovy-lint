@@ -2,6 +2,8 @@
 
 ## Beta
 
+## [16.2.0] 2025-01-24
+
 - Use npm Trusted Publishers program to sign releases
 - Generate multi-platform Docker images (linux/amd64, linux/arm64)
 - Add docker images to GitHub Container Registry (ghcr.io/nvuillam/npm-groovy-lint)
